@@ -44,7 +44,14 @@ data <- dataList %>%
          SupportClass = SuppClass,
          ActiveIn = ActvIn,
          ProviderCount = PrvdrCnt) %>%
-  select(ReportingDate, State, ServiceDistrict, DisabilityGroup, AgeBand, SupportClass, ActiveIn, ProviderCount) %>%
+  select(ReportingDate,
+         State,
+         ServiceDistrict,
+         DisabilityGroup,
+         AgeBand,
+         SupportClass,
+         ActiveIn,
+         ProviderCount) %>%
   distinct()
 
 root <- rprojroot::is_rstudio_project
@@ -52,4 +59,4 @@ root <- rprojroot::is_rstudio_project
 dataDir <- root$find_file("data")
 
 # Dataset creation
-qsave(data, paste(dataDir, "active-providers-dataset.qs", sep = "/"),preset="fast")
+qsave(data, paste(dataDir, "active-providers-dataset.qs", sep = "/"), preset = "fast")

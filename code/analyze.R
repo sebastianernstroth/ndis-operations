@@ -38,7 +38,7 @@ figure1a <- ggplot(figure1data, aes(x = X2, y = X1, group = X3)) +
            aes(fill = X3),
            position = position_dodge(width = 60),
            width = 50)+
-  labs(x="Quarter", y="Number of providers in Australia") +
+  labs(x = "Quarter", y = "Number of providers in Australia") +
   theme(plot.title.position = "plot",
         text = element_text(colour = "black", size = 14, family = "serif"),
         panel.background = element_rect(fill = "white"),
@@ -78,7 +78,7 @@ figure1stats <- figure1data %>%
 figure1b <- ggplot(figure1stats, aes(x = X2, y = X1)) +
   geom_line()+
   geom_point()+
-  labs(x="Quarter", y="Active provider rate in Australia (%)") +
+  labs(x = "Quarter", y = "Active provider rate in Australia (%)") +
   theme(plot.title.position = "plot",
         text = element_text(colour = "black", size = 14, family = "serif"),
         panel.background = element_rect(fill = "white"),
@@ -130,7 +130,7 @@ figure2a <- ggplot(figure2data, aes(x = X2, y = X1, group = X3)) +
            aes(fill = X3),
            position = position_dodge(width = 60),
            width = 50)+
-  labs(x="Quarter", y="Number of providers in Western Australia") +
+  labs(x = "Quarter", y = "Number of providers in Western Australia") +
   theme(plot.title.position = "plot",
         text = element_text(colour = "black", size = 14, family = "serif"),
         panel.background = element_rect(fill = "white"),
@@ -167,7 +167,7 @@ figure2stats <- figure2data %>%
 figure2b <- ggplot(figure2stats, aes(x = X2, y = X1)) +
   geom_line()+
   geom_point()+
-  labs(x="Quarter", y="Active provider rate in Western Australia (%)") +
+  labs(x = "Quarter", y = "Active provider rate in Western Australia (%)") +
   theme(plot.title.position = "plot",
         text = element_text(colour = "black", size = 14, family = "serif"),
         panel.background = element_rect(fill = "white"),
